@@ -1,0 +1,19 @@
+{
+  "name": "generate-ci-file",
+  "version": "1.0.0",
+  "description": "Gerador de arquivo para CI no gitlab",
+  "main": "app.js",
+  "author": "Lucas Simão",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "sucrase": "^3.12.1"
+  }
+}
