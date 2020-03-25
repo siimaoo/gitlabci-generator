@@ -1,0 +1,23 @@
+{
+  "name": "public",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "components": "git+http://gitlab+deploy-token-8:xjdVGKszyxUyWmfHJceA@git.dialhost.com.br/letscloud/components#master",
+    "v-mask": "^2.0.2",
+    "vee-validate": "^3.2.5",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "~4.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

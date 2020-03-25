@@ -21,7 +21,7 @@ class generateController {
       return res.send(
         {
           success: true,
-          message: "Your gitlab-ci file has been created, click in the link below to download your file!",
+          message: "Your gitlab-ci file has been created, click on the link below to download your file!",
           urlDownload: `/download/${ip}.yml`
         }
       )
