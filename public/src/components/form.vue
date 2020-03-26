@@ -56,7 +56,10 @@
       Path
     </label>
 
-    <buttonLoading class="btn btn-primary">
+    <buttonLoading 
+      class="btn btn-primary"
+      @click="submitForm()"
+    >
       Generate CI File
     </buttonLoading>
   </form>
@@ -64,6 +67,7 @@
 
 <script>
   import buttonLoading from 'components/components/forms/button-loading'
+  import axios from 'axios';
   export default {
     components: {
       buttonLoading
@@ -77,6 +81,20 @@
       ipFocus: false,
       pathFocus: false
     }),
+
+    methods: {
+      submitForm() {
+        axios.post("http://localhost:3000/generate", {
+          'user': user._value,
+          'ip': ip._value,
+          'path': path._value
+        }).then((res) => {
+          this.$emit('dataModal', res.data);
+        }).catch((err) => {
+          console.log(err);
+        })
+      }
+    }
   }
 </script>
 
@@ -86,8 +104,7 @@
     padding: 5%;
     width: 90%;
     max-width: 400px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    margin: 30px auto;
 
     input {
       width: 100%;
