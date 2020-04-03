@@ -3,11 +3,7 @@
     <div class="container h-100">
       <div class="row h-100">
         <div class="col-sm-12 d-flex align-items-center h-100">
-          <img 
-            src="https://www.letscloud.io/help/static/img/53d892a.svg" 
-            title="Let`s Cloud" 
-            alt="Let`s Cloud" 
-          />
+          <h1>Generate gitlab-ci file</h1>
         </div>
       </div>
     </div>
@@ -23,11 +19,8 @@
     flex-direction: row;
     align-items: center;
 
-    & img {
-      width: 16%;
-      min-width: 108px;
-      min-height: 26px;
-      height: auto;
+    & h1 {
+      font-size: 3rem;
     }
   }
 </style>

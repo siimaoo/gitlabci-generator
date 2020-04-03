@@ -104,11 +104,17 @@
     padding: 5%;
     width: 90%;
     max-width: 400px;
+    border-radius: 10px;
     margin: 30px auto;
+
+    .btn {
+      border-radius: 5px;
+    }
 
     input {
       width: 100%;
       border: 1px solid #c4e2ec;
+      border-radius: 5px;
       padding: {
         left: 10px;
         right: 10px;
