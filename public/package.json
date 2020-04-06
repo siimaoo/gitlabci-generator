@@ -9,9 +9,6 @@
   "dependencies": {
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
-    "components": "git+http://gitlab+deploy-token-8:xjdVGKszyxUyWmfHJceA@git.dialhost.com.br/letscloud/components#master",
-    "v-mask": "^2.0.2",
-    "vee-validate": "^3.2.5",
     "vue": "^2.6.11"
   },
   "devDependencies": {

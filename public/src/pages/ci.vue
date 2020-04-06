@@ -4,8 +4,7 @@
        
     <Modal 
       v-if="isVisible"
-      :url="url"
-      :message="message"
+      :data="modalData"
       @closeModal="closeModal"
     />
 
@@ -40,21 +39,17 @@
     },
 
     data: () => ({
-      message: '',
       isVisible: false,
-      url: ''
+      modalData: ''
     }),
 
     methods: {
       getData(evt) {
-        this.message = evt.message;
-        this.url = evt.urlDownload;
-        this.isVisible = true;
+        this.modalData = evt;
+        this.isVisible = true; 
       },
 
       closeModal() {
-        this.message = '';
-        this.url = '';
         this.isVisible = false; 
       }
     }
