@@ -1,11 +1,3 @@
-node_modules/
-ci-files/*
-yarn.lock
-.env
-
-public/node_modules/
-public/dist
-
 .DS_Store
 node_modules
 /dist

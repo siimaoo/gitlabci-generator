@@ -5,6 +5,9 @@ import generateController from '../controllers/generateController'
 const routes = Router();
 
 routes.post('/generate', generateController.generate);
-routes.get('/download/:fileName', generateController.download);
+
+routes.get('/', (req, res) => {
+  res.render(__dirname + '/../public/dist/index.html');
+})
 
 export default routes;

@@ -1,0 +1,38 @@
+.bg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.dialog {
+  padding: 5%;
+  width: 90%;
+  max-width: 500px;
+  position: fixed;
+  top: 50%;
+  border-radius: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 1;
+  animation: showModal 0.4s ease-in;
+
+  button {
+    width: 100%;
+  }
+}
+
+@keyframes showModal {
+  0% {
+    opacity: 0;
+    top: 60%;
+  }
+
+  100% {
+    opacity: 1;
+    top: 50%;
+  }
+}
