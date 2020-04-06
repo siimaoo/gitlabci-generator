@@ -1,4 +1,4 @@
-[EN](/blob/master/README.en.md) [PT-BR](/blob/master/README.pt-br.md)
+[EN](/blob/master/README.md) [PT-BR](/blob/master/README.pt-br.md)
 
 # CI Generator
 CI Generator is a project that generate a file gitlab-ci.yml to your repository (gitlab)

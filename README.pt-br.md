@@ -1,4 +1,4 @@
-[EN](/blob/master/README.en.md) [PT-BR](/blob/master/README.pt-br.md)
+[EN](/blob/master/README.md) [PT-BR](/blob/master/README.pt-br.md)
 
 # CI Generator
 
