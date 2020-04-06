@@ -60,37 +60,32 @@
         Path
       </label>
 
-      <buttonLoading 
+      <button 
         class="btn btn-primary"
         @click="submitForm()"
       >
         Generate CI File
-      </buttonLoading>
+      </button>
     </div>
   </form>
 </template>
 
 <script>
-  import buttonLoading from 'components/components/forms/button-loading'
   import axios from 'axios';
 
   export default {
-    components: {
-      buttonLoading
-    },
-
     data: () => ({
       user: '',
       ip: '',
       path: '',
       userFocus: false,
       ipFocus: false,
-      pathFocus: false
+      pathFocus: false,
     }),
 
     methods: {
       submitForm() {
-        axios.post("http://localhost:3000/generate", {
+        axios.post("localhost:3000/generate", {
           'user': user._value,
           'ip': ip._value,
           'path': path._value
@@ -105,50 +100,5 @@
 </script>
 
 <style lang="scss">
-  form {
-    box-shadow: 0px 0px 3px 1px #ddd;
-    padding: 5%;
-    width: 90%;
-    height: 80%;
-    max-width: 400px;
-    border-radius: 10px;
-    margin: 30px auto;
-
-    .btn {
-      border-radius: 5px;
-      width: 100%;
-    }
-
-    input {
-      width: 100%;
-      border: 1px solid #c4e2ec;
-      border-radius: 5px;
-      height: 50px;
-      padding: {
-        left: 10px;
-        right: 10px;
-        top: 20px;
-      };
-      margin: -10px 0px;
-    }
-
-    label {
-      position: relative;
-      top: -42px;
-      left: 12px;
-      font-size: 1rem;
-      transition: all .1s ease-in; 
-    }
-  }
-
-  .active {
-    color: #00afe6;
-    font-size: 0.8rem;
-    top: -47px;
-  }
-
-  .inputFocus {
-    outline: none;
-    border: 1px solid #00c3e6;
-  }
+  @import '../assets/components/form.scss';
 </style>

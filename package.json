@@ -6,7 +6,8 @@
   "author": "Lucas Simão",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "concurrently --kill-others-on-fail \"nodemon server.js\" \"cd public/ && yarn serve\" ",
+    "dev-mvc": "cd public/ && yarn build && cd .. && nodemon server.js"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
@@ -14,6 +15,7 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.2",
-    "sucrase": "^3.12.1"
+    "sucrase": "^3.12.1",
+    "concurrently": "^5.1.0"
   }
 }

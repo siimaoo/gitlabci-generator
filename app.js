@@ -1,4 +1,5 @@
 import express from "express";
+import path from 'path';
 
 import routes from './routes/generateRoute';
 
@@ -19,6 +20,7 @@ class App {
       next();
     });
     
+    this.express.use(express.static(path.join(__dirname, '/public/dist')));
     this.express.use(express.json());
   }
 

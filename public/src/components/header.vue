@@ -11,16 +11,5 @@
 </template>
 
 <style lang="scss">
-  nav {
-    width: 100%;
-    height: 80px;
-    box-shadow: 0px 0px 3px 1px #ddd;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    & h1 {
-      font-size: 3rem;
-    }
-  }
+  @import '../assets/components/header.scss';
 </style>

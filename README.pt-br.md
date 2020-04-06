@@ -1,3 +1,5 @@
+[EN](/blob/master/README.en.md) [PT-BR](/blob/master/README.pt-br.md)
+
 # CI Generator
 
 CI Generator é um projeto que gera um arquivo gitlab-ci.yml para seu repositorio (gitlab)

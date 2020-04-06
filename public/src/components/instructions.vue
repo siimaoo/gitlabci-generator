@@ -40,15 +40,5 @@
 </template>
 
 <style lang="scss">
-  ul {
-    list-style: none;
-
-    li {
-      padding: 5px 0px;
-
-      p {
-        font-size: 1.2rem;
-      }
-    }
-  }
+  @import '../assets/components/instructions.scss'
 </style>
