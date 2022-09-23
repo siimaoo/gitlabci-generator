@@ -12,11 +12,11 @@ To run this project it is necessary node.js, yam or npm in your instance
 ## Installing dependencies
 in the root of the project
 ```
-yarn &amp;&amp; yarn dev
+yarn && yarn dev
 ```
 or
 ```
-npm i &amp;&amp; npm run dev
+npm i && npm run dev
 ```
 then
 ```
@@ -24,11 +24,11 @@ cd public/
 ```
 and run again
 ```
-yarn &amp;&amp; yarn serve
+yarn && yarn serve
 ```
 or
 ```
-npm i &amp;&amp; npm run serve
+npm i && npm run serve
 ```
 After the server starts, just go to
 ```http://localhost:8080```
